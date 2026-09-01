@@ -1,0 +1,151 @@
+.sidebar-menu {
+    position: sticky;
+    top: 100px;
+    z-index: 10;
+}
+
+.sidebar-card {
+    background: #ffffff;
+    border-radius: 16px;
+    border: 1px solid rgba(20, 66, 100, 0.08);
+    box-shadow: 0 4px 15px rgba(20, 66, 100, 0.05);
+    overflow: hidden;
+}
+
+.sidebar-header {
+    background-color: var(--met-primary);
+    color: white;
+    padding: 16px 20px;
+    font-weight: 700;
+    font-size: 1.05rem;
+    border-bottom: 4px solid var(--met-amarillo);
+}
+
+.sidebar-list .list-group-item {
+    border: none;
+    border-bottom: 1px solid #f0f4f8;
+    padding: 14px 20px;
+    color: var(--met-primary);
+    font-weight: 600;
+    font-size: 0.92rem;
+    transition: all 0.25s ease;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sidebar-list .list-group-item:last-child {
+    border-bottom: none;
+}
+
+.sidebar-list .list-group-item:hover,
+.sidebar-list .list-group-item.active {
+    background-color: rgba(145, 213, 246, 0.15);
+    color: var(--met-naranja);
+    padding-left: 25px;
+}
+
+.sidebar-list .list-group-item i {
+    font-size: 0.85rem;
+    transition: transform 0.2s;
+}
+
+.sidebar-list .list-group-item:hover i {
+    transform: translateX(3px);
+}
+
+/* Widget de Ayuda */
+.sidebar-help-widget {
+    background: linear-gradient(135deg, var(--met-primary), var(--met-secondary));
+    color: white;
+    border-radius: 16px;
+    padding: 22px;
+    margin-top: 20px;
+}
+
+/* Section Cards Content */
+.doc-category-card {
+    background: #ffffff;
+    border-radius: 16px;
+    border: 1px solid rgba(0,0,0,0.06);
+    box-shadow: 0 4px 12px rgba(20, 66, 100, 0.04);
+    margin-bottom: 25px;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.doc-category-card:hover {
+    box-shadow: 0 8px 25px rgba(20, 66, 100, 0.1);
+}
+
+.doc-category-header {
+    padding: 20px 25px;
+    background: #ffffff;
+    border-bottom: 1px solid #f0f4f8;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.doc-icon-box {
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    background-color: rgba(245, 147, 18, 0.12);
+    color: var(--met-naranja);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+}
+
+.doc-category-title {
+    color: var(--met-primary);
+    font-weight: 800;
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+.doc-category-body {
+    padding: 25px;
+}
+
+/* Year Pills / Grid for downloads */
+.year-btn-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+    gap: 10px;
+}
+
+.btn-year-doc {
+    background-color: #f4f7fa;
+    color: var(--met-primary);
+    border: 1px solid #e1e8ed;
+    border-radius: 10px;
+    padding: 10px 14px;
+    font-weight: 700;
+    font-size: 0.88rem;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    transition: all 0.25s ease;
+}
+
+.btn-year-doc:hover {
+    background-color: var(--met-primary);
+    color: #ffffff;
+    border-color: var(--met-primary);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(20, 66, 100, 0.2);
+}
+
+.btn-year-doc i {
+    color: var(--met-naranja);
+}
+
+.btn-year-doc:hover i {
+    color: var(--met-amarillo);
+}

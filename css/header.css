@@ -1,0 +1,87 @@
+/* ============================================================
+   HEADER — Top Bar, Navbar y Logos institucionales
+============================================================ */
+
+/* Top Bar */
+.top-bar {
+    background-color: var(--met-primary);
+    color: var(--text-light);
+    font-size: 0.85rem;
+    padding: 5px 0;
+}
+.top-bar a {
+    color: var(--text-light);
+    text-decoration: none;
+    margin-left: 15px;
+    transition: color 0.3s;
+}
+.top-bar a:hover {
+    color: var(--met-celeste);
+}
+
+/* Header & Navbar */
+.main-header {
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(20, 66, 100, 0.08);
+    position: sticky;
+    top: 0;
+    z-index: 1030;
+}
+
+.nav-link {
+    color: var(--met-primary) !important;
+    font-weight: 600;
+    padding: 1rem 1.2rem !important;
+    transition: color 0.3s;
+}
+.nav-link:hover, .nav-link.active {
+    color: var(--met-naranja) !important;
+}
+
+.dropdown-menu {
+    border: none;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    border-top: 3px solid var(--met-amarillo);
+}
+
+.dropdown-item.active, .dropdown-item:active {
+    background-color: #144264 !important;
+    color: #ffffff !important;
+}
+
+/* Logos del Navbar: tamaños oficiales
+   edomex 114x51 | escudo 41x51 | metepec 88x52
+   Separación mínima entre los tres entes. */
+.brand-logo {
+    display: block;
+    height: auto;
+    flex-shrink: 0; /* conserva el tamaño exacto en móvil/tablet */
+}
+.navbar-brand {
+    gap: 6px !important; /* menos separación entre los 3 entes */
+}
+.logo-edomex {
+    width: 114px; /* 114 x 51 */
+}
+.logo-escudo {
+    width: 41px;  /* 41 x 51 */
+}
+.logo-admin {
+    width: 88px;  /* 88 x 52 */
+}
+
+/* Tablet / pantallas medianas */
+@media (max-width: 1199.98px) {
+    .navbar-brand { gap: 5px !important; }
+    .logo-edomex { width: 96px; }
+    .logo-escudo { width: 35px; }
+    .logo-admin  { width: 74px; }
+}
+
+/* Teléfono / móvil */
+@media (max-width: 767.98px) {
+    .navbar-brand { gap: 4px !important; }
+    .logo-edomex { width: 84px; }
+    .logo-escudo { width: 31px; }
+    .logo-admin  { width: 64px; }
+}

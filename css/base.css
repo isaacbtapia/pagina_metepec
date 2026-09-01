@@ -1,1 +1,52 @@
+/* ============================================================
+   BASE — Variables globales, tipografía y botones compartidos
+   H. Ayuntamiento de Metepec
+============================================================ */
 
+:root {
+    /* Colores Institucionales Principales */
+    --met-primary: #144264;
+    --met-secondary: #1a5986;
+
+    /* Colores de Acento (Logo) */
+    --met-verde-amarillo: #aac910;
+    --met-celeste: #91d5f6;
+    --met-azul: #355ba6;
+    --met-lavanda: #9e81b9;
+    --met-rosa: #f0a4c7;
+    --met-naranja: #f59312;
+    --met-cian: #66c2c5;
+    --met-amarillo: #fed215;
+
+    --bg-light: #f9fbfe;
+    --text-dark: #212529;
+    --text-light: #ffffff;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--text-dark);
+    background-color: var(--bg-light);
+    overflow-x: hidden;
+    transition: all 0.3s ease;
+}
+
+/* Botones Custom (uso global) */
+.btn-met-primary {
+    background-color: var(--met-primary);
+    color: white;
+    border: none;
+}
+.btn-met-primary:hover {
+    background-color: var(--met-secondary);
+    color: white;
+}
+.btn-met-accent {
+    background-color: var(--met-naranja);
+    color: white;
+    border: none;
+}
+.btn-met-accent:hover {
+    background-color: #d97c0c;
+    color: white;
+}

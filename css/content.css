@@ -1,0 +1,169 @@
+/* ============================================================
+   CONTENT — Hero, accesos rápidos, secciones y tarjetas
+============================================================ */
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(rgba(20, 66, 100, 0.8), rgba(26, 89, 134, 0.8));
+    color: white;
+    padding: 80px 0;
+    text-align: center;
+}
+.search-box {
+    background: white;
+    border-radius: 50px;
+    padding: 6px;
+    display: flex;
+    max-width: 700px;
+    margin: 0 auto;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+.search-box input {
+    border: none;
+    padding: 15px 25px;
+    border-radius: 50px;
+    width: 100%;
+    font-size: 1.1rem;
+}
+.search-box input:focus { outline: none; }
+.search-box button {
+    border-radius: 50px;
+    padding: 10px 35px;
+    font-weight: 600;
+}
+
+/* Lo más solicitado (Accesos Rápidos) */
+.quick-access-wrapper {
+    margin-top: -40px;
+    position: relative;
+    z-index: 10;
+}
+.qa-card {
+    background: white;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(20, 66, 100, 0.08);
+    transition: all 0.3s;
+    height: 100%;
+    text-decoration: none;
+    color: var(--met-primary);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid transparent;
+}
+.qa-card:hover {
+    transform: translateY(-8px);
+    border-color: var(--met-celeste);
+    box-shadow: 0 15px 30px rgba(20, 66, 100, 0.15);
+}
+.qa-card i {
+    font-size: 2.2rem;
+    color: var(--met-secondary);
+    margin-bottom: 12px;
+}
+.qa-card h6 {
+    font-weight: 700;
+    margin: 0;
+}
+
+/* Títulos de sección */
+.section-title {
+    color: var(--met-primary);
+    font-weight: 800;
+    position: relative;
+    margin-bottom: 2rem;
+    padding-bottom: 10px;
+}
+.section-title::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 80px;
+    height: 5px;
+    background-color: var(--met-amarillo);
+    border-radius: 5px;
+}
+.text-center .section-title::after {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Organismos Grid */
+.org-card {
+    border-radius: 16px;
+    overflow: hidden;
+    text-decoration: none;
+    display: block;
+    transition: transform 0.3s, box-shadow 0.3s;
+    background: white;
+    height: 100%;
+    position: relative;
+}
+.org-card:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+.org-card-content {
+    padding: 25px 20px;
+    text-align: center;
+    color: var(--met-primary);
+    position: relative;
+    z-index: 2;
+}
+.org-card i {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+.org-card h5 {
+    font-weight: 700;
+    font-size: 1.1rem;
+    margin-bottom: 0;
+}
+/* Colores dinámicos para organismos */
+.org-color-1 i { color: var(--met-cian); }
+.org-color-1 { border-bottom: 5px solid var(--met-cian); }
+
+.org-color-2 i { color: var(--met-rosa); }
+.org-color-2 { border-bottom: 5px solid var(--met-rosa); }
+
+.org-color-3 i { color: var(--met-naranja); }
+.org-color-3 { border-bottom: 5px solid var(--met-naranja); }
+
+.org-color-4 i { color: var(--met-verde-amarillo); }
+.org-color-4 { border-bottom: 5px solid var(--met-verde-amarillo); }
+
+.org-color-5 i { color: var(--met-lavanda); }
+.org-color-5 { border-bottom: 5px solid var(--met-lavanda); }
+
+.org-color-6 i { color: var(--met-azul); }
+.org-color-6 { border-bottom: 5px solid var(--met-azul); }
+
+.org-color-7 i { color: var(--met-amarillo); }
+.org-color-7 { border-bottom: 5px solid var(--met-amarillo); }
+
+.org-color-8 i { color: var(--met-celeste); }
+.org-color-8 { border-bottom: 5px solid var(--met-celeste); }
+
+/* Banner Promocional */
+.promo-banner {
+    background-color: var(--met-primary);
+    color: white;
+    border-radius: 20px;
+    padding: 40px;
+    position: relative;
+    overflow: hidden;
+}
+.promo-banner::before {
+    content: '';
+    position: absolute;
+    top: -50%; right: -10%;
+    width: 400px; height: 400px;
+    background: var(--met-secondary);
+    border-radius: 50%;
+    z-index: 0;
+}
+.promo-content { position: relative; z-index: 1; }
